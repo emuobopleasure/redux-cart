@@ -5,7 +5,6 @@ export const fetchCartData = () => {
     return async (dispatch) => {
         const fetchData = async () => {
           const response = await fetch('https://redux-cart-b9681-default-rtdb.firebaseio.com/cart.json')
-        // console.log(response, 'fetching')
 
           if (!response.ok) {
             throw new Error('Could not fetch data!')

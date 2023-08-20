@@ -7,8 +7,6 @@ import { uiActions } from './store/ui-slice';
 import Notification from './components/UI/Notification';
 import { fetchCartData, sendCartData } from './store/cart-actions';
 
-// let isInitial = true
-
 function App() {
   const showCart = useSelector((state) => state.ui.cartIsVisible)
   const dispatch = useDispatch()
